@@ -1,130 +1,151 @@
-/* Reset & Base Styles */
+/* Reset & Base */
 body {
-    font-family: 'Segoe UI', sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #f4f9fc;
-    color: #333;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: #f4f9fc;
+  color: #333;
 }
 
 /* Header */
 header {
-    background: #1c3c5c;
-    color: white;
-    padding: 10px 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+  background: #1c3c5c;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .company-name {
-    font-size: 20px;
-    font-weight: bold;
-    flex: 1 1 100%;
-    text-align: center;
-    margin-bottom: 10px;
-    color: #00c3ff;
+  font-size: 20px;
+  font-weight: bold;
+  flex: 1 1 100%;
+  text-align: center;
+  color: #00c3ff;
+  margin-bottom: 10px;
 }
 
 .left-menu ul {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-    margin: 0;
-    padding: 0;
-    flex-wrap: wrap;
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
 }
 
 .left-menu ul li a,
-.right-menu a {
-    color: #ffffff;
-    text-decoration: none;
-    font-weight: 500;
-    padding: 6px 12px;
-    transition: background 0.3s;
+.right-menu-icons a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s, transform 0.3s;
+  padding: 6px 10px;
+  border-radius: 5px;
 }
 
 .left-menu ul li a:hover,
-.right-menu a:hover {
-    background: #00c3ff;
-    border-radius: 5px;
+.right-menu-icons a:hover {
+  background: #00c3ff;
+  transform: scale(1.05);
 }
 
-.right-menu a {
-    margin-left: 15px;
+.right-menu-icons {
+  display: flex;
+  gap: 10px;
+  font-size: 18px;
 }
 
-/* Hero Section */
+/* Hero */
 .hero {
-    background: linear-gradient(to right, #1e5f74, #00c3ff);
-    color: white;
-    text-align: center;
-    padding: 70px 20px;
-}
-
-.hero h1 {
-    font-size: 32px;
-    margin-bottom: 10px;
-}
-
-.hero p {
-    font-size: 18px;
-    font-style: italic;
+  background: linear-gradient(to right, #1e5f74, #00c3ff);
+  color: white;
+  text-align: center;
+  padding: 70px 20px;
 }
 
 /* Sections */
 section {
-    padding: 40px 20px;
-    border-bottom: 1px solid #dce3e8;
+  padding: 40px 20px;
+  border-bottom: 1px solid #dce3e8;
 }
 
 section h2 {
-    color: #1e5f74;
-    margin-bottom: 10px;
+  color: #1e5f74;
+  margin-bottom: 10px;
 }
 
-section p {
-    font-size: 16px;
-    max-width: 800px;
+/* Welcome */
+.welcome p {
+  max-width: 900px;
+  margin: 0 auto 15px;
+  line-height: 1.6;
+}
+
+/* Services Boxes */
+.service-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.service-box {
+  background: white;
+  border: 1px solid #ccd9e3;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  padding: 20px;
+  width: 300px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+.service-box h3 {
+  color: #0077aa;
+  margin-bottom: 10px;
 }
 
 /* Form */
 form label {
-    display: block;
-    margin: 10px 0;
-    font-weight: bold;
+  display: block;
+  margin: 10px 0;
+  font-weight: bold;
 }
 
-form input,
-form textarea {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    border: 1px solid #ccd9e3;
-    border-radius: 4px;
-    box-sizing: border-box;
+form input, form textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccd9e3;
+  border-radius: 4px;
+  margin-top: 5px;
 }
 
 button {
-    background: #00aaff;
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    margin-top: 10px;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 16px;
+  background: #00aaff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  margin-top: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
 }
 
 button:hover {
-    background: #008ecc;
+  background: #008ecc;
 }
 
 /* Footer */
 footer {
-    background: #1c3c5c;
-    color: white;
-    text-align: center;
-    padding: 15px 0;
+  background: #1c3c5c;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
 }
