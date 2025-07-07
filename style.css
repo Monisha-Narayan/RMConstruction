@@ -1,68 +1,130 @@
+/* Reset & Base Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', sans-serif;
     margin: 0;
     padding: 0;
+    background: #f4f9fc;
+    color: #333;
 }
 
+/* Header */
 header {
-    display: flex;
-    justify-content: space-between;
-    background: #2c3e50;
+    background: #1c3c5c;
     color: white;
     padding: 10px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.company-name {
+    font-size: 20px;
+    font-weight: bold;
+    flex: 1 1 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    color: #00c3ff;
 }
 
 .left-menu ul {
     list-style: none;
     display: flex;
     gap: 15px;
+    margin: 0;
     padding: 0;
+    flex-wrap: wrap;
 }
 
-.left-menu ul li a, .right-menu a {
-    color: white;
+.left-menu ul li a,
+.right-menu a {
+    color: #ffffff;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 500;
+    padding: 6px 12px;
+    transition: background 0.3s;
+}
+
+.left-menu ul li a:hover,
+.right-menu a:hover {
+    background: #00c3ff;
+    border-radius: 5px;
 }
 
 .right-menu a {
     margin-left: 15px;
 }
 
+/* Hero Section */
 .hero {
-    background: #e67e22;
+    background: linear-gradient(to right, #1e5f74, #00c3ff);
     color: white;
-    padding: 60px 20px;
     text-align: center;
+    padding: 70px 20px;
 }
 
+.hero h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    font-style: italic;
+}
+
+/* Sections */
 section {
     padding: 40px 20px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #dce3e8;
 }
 
+section h2 {
+    color: #1e5f74;
+    margin-bottom: 10px;
+}
+
+section p {
+    font-size: 16px;
+    max-width: 800px;
+}
+
+/* Form */
 form label {
     display: block;
     margin: 10px 0;
+    font-weight: bold;
 }
 
-form input, form textarea {
+form input,
+form textarea {
     width: 100%;
     padding: 8px;
     margin-top: 5px;
+    border: 1px solid #ccd9e3;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
 button {
-    padding: 10px 20px;
-    background: #2980b9;
+    background: #00aaff;
     color: white;
     border: none;
+    padding: 12px 20px;
+    margin-top: 10px;
+    border-radius: 4px;
     cursor: pointer;
+    font-size: 16px;
 }
 
+button:hover {
+    background: #008ecc;
+}
+
+/* Footer */
 footer {
-    background: #2c3e50;
+    background: #1c3c5c;
     color: white;
     text-align: center;
-    padding: 15px;
+    padding: 15px 0;
 }
